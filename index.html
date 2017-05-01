@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Home</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+ 
+switch(parseInt(n))
+{
+  case 1:
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 2:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 3:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 4:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");   
+  break;
+  case 5:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+   case 6:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  default:
+  /*alert("entro al default : "+"-"+n+"-");*/
+  break;
+}
+  </script>
+
+  
+<div class="fondo">
+  <header>
+    <div id="wrapperbanner">
+      <div class="adelante2"></div>
+      <div class="adelante1"></div>
+      <div class="medios1"></div>
+      <div class="medios2"></div>
+      <div class="medios3"></div>
+      <div class="medios4"></div>
+      <div class="medios5"></div>
+      <div class="atras2"></div>
+      <div class="atras1"></div>
+    </div>
+  <div id="headern">
+         <div id="vinculos">
+           <div id="bsup">
+                     </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+              <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div>
+</header>
+<div id="wrapperhome">
+  <div id="contenedormediosup">
+      <div id="pder">
+        <div id="text1pder">CREAMOS<br/>EXPERIENCIAS<br/>WEB</div>
+        <div id="bdesarrollo">DESARROLLO<br>WEB</br></div>
+        <div id="bdiseño">DISEÑO<br>GRÁFICO</div>
+        <div id="bmercadeo">MERCADEO</br>DIGITAL</div>
+		<div id="bcorreoe">CORREOS ELECTRÓNICOS</br>Y HOSPEDAJE</div>
+      </div>
+      <div id="pizq"></div>
+      </div>
+      <div id="contenedormedioinf">
+      <div id="pder2"></div>
+      <div id="pizq2">
+        <div id="text1pizq">NUESTRO<br>TRABAJO</br></div>
+        <div id="text2pizq">Conozca una muestra de lo que hacemos</div>
+      </div>
+      </div>
+       <div id="metodologia">
+        <div id="iconos">
+        <div id="meto-1" onmouseover="cambionombre(this);">
+          <div class="p_e"></div>
+        </div>
+        <div id="meto-2" onmouseover="cambionombre(this);">
+          <div class="d_d"></div>
+        </div>
+        <div id="meto-3" onmouseover="cambionombre(this);">
+          <div class="p_1"></div>
+        </div>
+        <div id="meto-4" onmouseover="cambionombre(this);">
+          <div class="l_1"></div>
+        </div>
+        <div id="meto-5" onmouseover="cambionombre(this);">
+          <div class="s_1"></div>
+        </div>
+        </div>
+        <div id="bannermeto">
+        </div>
+      </div>
+</div>
+<footer>
+<footer>
+    <div id="footerclaro">
+      <div id="logonetosfera2"></div>
+      <span class="vinferior">
+      <ul>
+      <li> <a href="metodologia.html">Metodologia</a></li>
+      <li> <a href="portafolio.html">Portafolio</a> </li>
+      <li> <a href="servicios.html">Servicios</a> </li>
+      <li> <a href="contacto.html">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferior">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferior">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+    </footer>
+ <form class="form-footer">
+        <input type value="Nombre" class="cnombre">
+      <input type value="Email / Telefono" class="cemail">
+      <input type value="Asunto" class="casunto">
+      <input type value="Enviar" class="cenviar">
+      </form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Contáctanos</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+</script>
+<div class="fondon">
+   <div id="headern">
+         <div id="vinculos">
+           <div id="bsup">
+          
+           </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html" href="{{ path('frontend_contenido_homepage') }}"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+          <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div>
+<div id="wrapper">
+            <div id="contenedormediosupcontact">
+
+      <div id="googlemap">
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.ve/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=netosfera&amp;aq=&amp;sll=6.464349,-66.58562&amp;sspn=15.021969,21.071777&amp;ie=UTF8&amp;hq=netosfera&amp;hnear=&amp;t=m&amp;cid=14856613440684732010&amp;ll=10.45844,-66.894379&amp;spn=0.025321,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><br />
+    </div>
+
+      <div id="barragooglemap">
+         <div id="barraccs"></div>
+      </div>
+        <div id="txtbarraccs" href="#">CARACAS</div>
+        <div id="txtbarrahs" href="#">HOUSTON</div>
+      <div id="boxformulario">
+        <div id="fondoform">
+          <form class="formC">
+          <input type value="Asunto" class="casuntolistC"><br></br>
+          <input type value="Nombre" class="cnombreC"><br></br>
+          <input type value="Apellido" class="capellidoC"><br></br>
+          <input type value="Empresa" class="cempresaC"><br></br>
+          <input type value="Teléfono" class="ctelefonoC"><br></br>
+          <input type value="Email" class="cemailC"><br></br>
+          </form>
+          <form class="form2C">
+          <div id="comentariosc"><span class="Commentc">Comentarios:</span></div>
+          <textarea value="Asunto" class="casuntoC" rows="6" cols="26.8">Escribe aquí tus comentarios</textarea>
+          <input type value="Enviar" class="cenviarC">
+          </form>
+        </div>
+      <div id="ccsbtn">CARACAS</div>
+      <div id="ccsbtncacho"></div>
+      <div id="ccstxt">+58(212)425.8821 <br> +58(212)418.2286 <br> CONTACTO@NETOSFERA.COM</div>
+      <div id="hustonbtn">HOUSTON</div>
+      <div id="hustonbtncacho"></div>
+      <div id="hustontxt">+1(305)406.2431<br> CONTACTO@NETOSFERA.COM</div>
+        <div id="tituloform">contáctenos</div>
+      </div>
+      <div id="barranewsletter">
+      <div id="newsletterbox">
+          <div id="newsletterbtn">
+            <div id="nimg"></div>
+          </div>
+          <span class="textonews1">Newsletter <br>de clientes</br></span><br></br><span class="textonews2">Subscríbete ya</span>
+		  <div id="blogbtn">
+            <div id="nimg"></div>
+          </div>
+		  <span class="textonews3">Blog</br></span><br></br><span class="textonews4">Enterate de lo nuevo</span>
+      <div id="txt-o1"><span class="textof1">Oficina / Caracas <br></span><span class="textof2">Aquí irá la dirección de Caracas</span></div>
+      <div id="txt-o2"><span class="textof1">Oficina / Houston </span><br><span class="textof2">Aquí irá la dirección de Houston</span></div>
+      </div>
+      </div>
+    </div>
+</div>
+
+<div class="footern">
+    <div id="footerclaro">
+      <div id="logonetosfera2"></div>
+      <span class="vinferior">
+      <ul>
+      <li> <a href="">Metodologia</a></li>
+      <li> <a href="">Portafolio</a> </li>
+      <li> <a href="">Servicios</a> </li>
+      <li> <a href="">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferior">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferior">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+    </div>
+
+      <div id="modulotwitter">
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Netosfera"  data-widget-id="342679836218757120">Tweets por @Netosfera</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      </div>
+
+      <div id="formularionewsletter">
+      
+      <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup306043" accept-charset="UTF-8" onsubmit="return verifyRequired306043();" >
+      <input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+      <input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+
+      <div id="SignUp">
+      <table width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
+        <tr>
+          <td valign="top" align="right">
+          <span class="required">*</span>&nbsp;Email
+          </td>
+          <td align="left">
+          <input type="text" name="fields_email">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">
+          <span class="required">*</span>&nbsp;Nombre
+          </td>
+          <td align="left">
+          <input type="text" name="fields_fname">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">
+          <span class="required">*</span>&nbsp;Apellido
+          </td>
+          <td align="left">
+          <input type="text" name="fields_lname">
+          </td>
+        </tr>
+          <tr>
+          <td valign="top" align="right">
+          &nbsp;Twitter
+          </td>
+          <td align="left">
+          <input type="text" name="fields_twitter">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">
+          &nbsp;Facebook
+          </td>
+          <td align="left">
+          <input type="text" name="fields_facebook">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">
+          &nbsp;Sitio web
+          </td>
+          <td align="left">
+          <input type="text" name="fields_sitioweb">
+          </td>
+        </tr>
+        <input type="hidden" name="listid" value="21252">
+        <input type="hidden" name="specialid:21252" value="TVXX">
+
+        <input type="hidden" name="clientid" value="619243">
+        <input type="hidden" name="formid" value="306043">
+        <input type="hidden" name="reallistid" value="1">
+        <input type="hidden" name="doubleopt" value="0">
+        <tr>
+          <td>&nbsp;</td>
+          <td><span class="required">*</span> = Required Field</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="Submit" value="Submit"></td>
+        </tr>
+        </table>
+      </div>
+      </form>
+      <script type="text/javascript">
+
+      var icpForm306043 = document.getElementById('icpsignup306043');
+
+      if (document.location.protocol === "https:")
+
+        icpForm306043.action = "https://app.icontact.com/icp/signup.php";
+      function verifyRequired306043() {
+        if (icpForm306043["fields_email"].value == "") {
+        icpForm306043["fields_email"].focus();
+        alert("The Email field is required.");
+        return false;
+        }
+        if (icpForm306043["fields_fname"].value == "") {
+        icpForm306043["fields_fname"].focus();
+        alert("The Nombre field is required.");
+        return false;
+        }
+        if (icpForm306043["fields_lname"].value == "") {
+        icpForm306043["fields_lname"].focus();
+        alert("The Apellido field is required.");
+        return false;
+        }
+
+
+      return true;
+      }
+      </script>
+      </div>
+
+      <div id="btntwitter">
+        <div id="timg2"></div>
+      </div>
+
+      <div id="modulofacebook">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnetosfera&amp;width=292&amp;height=415&amp;show_faces=true&amp;colorscheme=light&amp;stream=true&amp;show_border=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:590px;" allowTransparency="true"></iframe>
+<div id="fondomodulofacebook"></div>
+      </div>
+
+      <div id="btnface">
+        <div id="fimg"></div>
+      </div>
+
+
+  </div>
+</div>
+
+</body>
+</html>
+

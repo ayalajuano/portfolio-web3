@@ -1,0 +1,48 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.connectors.com" resolutions="1x" timestamp="1461760214866">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="blog.css" crc="112180619" ref="blog"/>
+    <file name="team.css" crc="112180619" ref="team"/>
+    <file name="solutions.css" crc="112180619" ref="solutions"/>
+    <file name="index.css" crc="52699565" ref="index"/>
+    <file name="contact.css" crc="112180619" ref="contact"/>
+    <file name="about.css" crc="112180619" ref="about"/>
+    <file name="services.css" crc="112180619" ref="services"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:services:solutions:blog:about:team:contact"/>
+    <file name="museutils.js" crc="183364071" ref="index:services:solutions:blog:about:team:contact"/>
+    <file name="jquery.musemenu.js" crc="3957776250" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="3803554875" ref="index"/>
+    <file name="musewpslideshow.js" crc="242596657" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="493285861" ref="index"/>
+    <file name="touchswipe.js" crc="4038331989" ref="index"/>
+    <file name="form_check.php" crc="277267350" ref="index"/>
+    <file name="form_throttle.php" crc="3908387251" ref="index"/>
+    <file name="form_process.php" crc="24249335" ref="index"/>
+    <file name="form-u627.php" crc="328091435" ref="index"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:services:solutions:blog:about:team:contact"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:services:solutions:blog:about:team:contact"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.png" crc="345859882" seo="true" ref="index"/>
+    <file name="2.jpg" crc="3858046230" seo="true" ref="index"/>
+    <file name="slide-01.png" crc="4248873379" seo="true" ref="index"/>
+    <file name="slide-02 (1).png" crc="110864991" seo="true" ref="index"/>
+    <file name="slide-03.png" crc="436908504" seo="true" ref="index"/>
+    <file name="untitled-4.png" crc="521424448" seo="true" ref="index"/>
+    <file name="u647-17.png" crc="3992756326" ref="index"/>
+    <file name="u647-17-r.png" crc="144995629" ref="index"/>
+    <file name="u647-17-m.png" crc="366878570" ref="index"/>
+    <file name="u647-17-fs.png" crc="4111533317" ref="index"/>
+    <file name="untitled-5.jpg" crc="116573019" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="175034651" seo="true" mt="1461760127457" redirect="true"/>
+  <file name="services.html" crc="4229028530" seo="true" mt="1461710203074" redirect="false"/>
+  <file name="solutions.html" crc="228305904" seo="true" mt="1461710208305" redirect="false"/>
+  <file name="blog.html" crc="4272909372" seo="true" mt="1461710212567" redirect="false"/>
+  <file name="about.html" crc="3867783521" seo="true" mt="1461710230911" redirect="false"/>
+  <file name="team.html" crc="3825120672" seo="true" mt="1461710234105" redirect="false"/>
+  <file name="contact.html" crc="4217086319" seo="true" mt="1461710237359" redirect="false"/>
+</manifest>

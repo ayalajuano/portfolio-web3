@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Servicios</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+  </script>
+<div class="fondon">
+   <div id="headern">
+         <div id="vinculos">
+           <div id="bsup">
+       
+           </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html" href="{{ path('frontend_contenido_homepage') }}"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+             <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div>  
+</div>
+    <div id="wrapper">
+<div id="contenedormediosupservicio">
+      <div id="barragooglemaps">
+          <div id="barrades"></div>
+        </div>
+        <div id="txtbarrades" href="#">DESARROLLO WEB</div>
+        <div id="txtbarramer" href="#">MERCADEO DIGITAL</div>
+        <div id="txtbarradis" href="#">DISEÑO GRÁFICO</div>
+        <div id="txtbarracor" href="#">CORREOS ELECTRÓNICOS <br/>Y HOSPEDAJE</div>
+      <div id="boxformularios">
+        <div id="fondoforms">
+          <div id="fondoimgdes">
+          <div id="fondoimgdes2"></div>
+          </div>
+          <div id="botoness">
+            <div id="b1s"></div>
+            <div id="b2s"></div>
+            <div id="b3s"></div>
+            <div id="b4s"></div>
+            <div id="b5s"></div>
+          </div>
+          <div id="textimgdes"><span class="textimgdes">Tenemos años de experiencia en el desarrollo de aplicaciones web basadas en manejadores de contenido y bases de dato. Desarrollamos su aplicación con módulos de actualización que peRmiten actualizar el contenido de su página web sin depender de nosotros. Creamos reportes dinámicos a la medida dandole valor a la informacion almacenada en su sistema.</span></div>
+          <div id="hilos"></div>
+          <div id="imgs1"></div>
+          <div id="imgs2"></div>
+        </div>
+        <div id="tituloforms">DESARROLLO WEB</div>
+      </div>
+      <div id="barraimg"></div>
+      <div id="txt-s1"><span class="textof1">DESARROLLO<br></span><span class="textof2">WEB</span></div>
+      <div id="txt-s2"><span class="textof1">DISEÑO</span><br><span class="textof2">GRÁFICO</span></div>
+      <div id="txt-s3"><span class="textof1">MERCADEO</span><br><span class="textof2">DIGITAL</span></div>
+      <div id="txt-s4"><span class="textof1">CORREOS ELECTRÓNICOS</span><br><span class="textof2">Y HOSPEDAJE</span></div>
+    </div>
+    </div>
+ <div class="footerservi">
+    <div id="footerclaroservi">
+      <div id="logonetosfera2"></div>
+      <span class="vinferiors">
+      <ul>
+      <li> <a href="">Metodologia</a></li>
+      <li> <a href="">Portafolio</a> </li>
+      <li> <a href="">Servicios</a> </li>
+      <li> <a href="">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferiors">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferiors">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+

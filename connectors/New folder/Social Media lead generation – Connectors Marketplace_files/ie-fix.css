@@ -1,0 +1,46 @@
+﻿/*
+    IE Fixes
+    Date: 07.10.2015
+    Task No: CLGS-116
+*/
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+/* about page */
+.hs-image-caption {
+  clear: both;
+  display: block;
+}
+/*fallback for other browsers */
+.hs-solutions-page-content-wrapper {
+  padding-top: 115px;
+}
+.hs-solutions-page-content-wrapper .polygon-shape-left {
+  shape-outside: polygon(100% 0, 0 100%, 1% 100%);
+  /* float: left; */
+  /* width: 170px; */
+  /* height: 220px; */
+}
+@media only screen and (max-width: 320px) {
+  .hs-package-section .hs-single-plan {
+    padding: 10px 15px;
+    background-position: center center;
+  }
+  .hs-package-section .hs-single-plan .hs-features li {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .hs-package-section .hs-get-started-btn {
+    padding: 8px 15px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .hs-reposnive-sol {
+    display: block !important;
+  }
+  .hs-svg-wrapper {
+    display: none;
+  }
+}
+/*# sourceMappingURL=ie-fix.css.map */

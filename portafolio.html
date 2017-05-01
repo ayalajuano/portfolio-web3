@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Galería</title>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+
+  </script>
+
+<div class="fondon">
+   <div id="headern">
+         <div id="vinculos">
+           <div id="bsup">
+      
+           </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html" href="{{ path('frontend_contenido_homepage') }}"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+             <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div> 
+    <div id="wrapper">
+<div id="wrappern">
+  <div id="contenedormediosupg">
+    <div id="pdesg">
+      <div id="barraimgd"></div>
+      <div id="letreroimgd"><span class ="letreroimgd">DESTACADOS</span></div>
+      <div id="imgd1"></div>
+      <div id="imgd2"></div>
+      <div id="imgd3"></div>
+      <div id="imgd4"></div>
+      <div id="imgd5"></div>
+      <div id="imgd6"></div>
+      <div id="imgd7"></div>
+    </div>
+  </div>
+
+ <div id="barracategorias">
+    <ul>
+      <li><a class ="boton1" href="#";<span class="vinculossup">Página a la medida</span></a></li>
+      <li><a class ="boton1" href="#";<span class="vinculossup">Tiendas virtuales</span></a></li>
+      <li><a class ="boton1" href="#";<span class="vinculossup">Manejadores de contenido</span></a></li>
+      <li><a class ="boton1" href="#";<span class="vinculossup">paginas estáticas</span></a></li>
+      <li><a class ="boton1" href="#";<span class="vinculossup">Sistema de información</span></a></li>
+    </ul>
+    </div>
+  <div id="barraportafolio">
+          <div id="bportafoliogris">
+            <div id="bluescroll"></div>
+            <div id="lportafoliogris"></div>
+          </div>
+          <div id="flechaizqportafolio"></div>
+          <div id="flechaderportafolio"></div>          
+  </div>
+
+  <div id="contenedormedioinfg">
+    <div id="pgalderg">
+        <div id="bpmg"> <strong>Página a la medida<br/></strong></div>
+      <div id="btvg"><strong>Tiendas Virtuales<br/></strong></div>
+      <div id="bmcg"><strong>Manejadores de Contenido</strong></div>
+      <div id="bpeg"><strong>Paginas Estáticas</strong></div>
+      <div id="bsig"><strong>Sistema de Información</strong></div>
+        </div>
+    <div id="pgalg">
+      <div id="imgps">
+      <div id="imgp1"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgp2"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgp3"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgp4"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgp5"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgp6"><span class ="imgps">www.facebook.com</span></div>
+      <div id="imgpactiva">
+          <div class="textoactivog"><span class="textoactivogal">Esta página fue Creada para los videojugadores que se encuentran en todas partes del mundo, especializada en videojuegos de la Empresa "Ubisoft".<span class="textoactivogalder">Entra ya en la página.</span></span><span class="vinculoactivogal"><div id="flechaactivogal"></div></span></div>
+          <div id="btnquitargal"><span class="btnquitargal">X</span></div>
+      </div>
+    </div>
+	<div id="imgcactiva">
+          <div class="textoactivog"><span class="textoactivogal">Esta página fue Creada para los videojugadores que se encuentran en todas partes del mundo, especializada en videojuegos de la Empresa "Ubisoft".</span></div>
+          <div id="btnquitargal"><span class="btnquitargal">X</span></div>
+      </div>
+    </div>
+  <div id="barragrisfinal"></div>
+  </div>
+  <div id="shareit">
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b87e70633cf10f"></script>
+<!-- AddThis Button END -->
+
+</div>
+</div>
+</div>
+
+ <div class="footern">
+    <div id="footerclaro">
+      <div id="logonetosfera2"></div>
+      <span class="vinferior">
+      <ul>
+      <li> <a href="">Metodologia</a></li>
+      <li> <a href="">Portafolio</a> </li>
+      <li> <a href="">Servicios</a> </li>
+      <li> <a href="">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferior">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferior">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+    </div>
+      <form class="form-footer">
+        <input type value="Nombre" class="cnombre">
+      <input type value="Email / Telefono" class="cemail">
+      <input type value="Asunto" class="casunto">
+      <input type value="Enviar" class="cenviar">
+      </form>
+
+
+</div>
+</body>
+</html>
+

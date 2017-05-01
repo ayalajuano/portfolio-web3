@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Nosotros</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+  </script>
+
+  <div class="fondon">
+   <div id="headern">
+         <div id="vinculos">
+           <div id="bsup">
+           
+           </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html" href="{{ path('frontend_contenido_homepage') }}"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+             <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div> 
+    <div id="wrapper">
+<div id="wrappern">
+        <div id="contenedormediosupn">
+          <div id="barragooglemapn">
+            <div id="barragm"></div>
+            <div id="txtbarranos" href="#">NOSOTROS</div>
+            <div id="txtbarracli" href="#">CLIENTES</div>
+            </div>
+          <div id="boxformulariosn">
+            <div id="fondoformsn"> 
+                <div id="fondoimgdesn">
+                  <div id="fondoimgdes2n">
+            <div id="avatar1"></div>
+            <div id="avatar2"></div>
+            <div id="avatar3"></div>
+            <div id="avatar4"></div>  
+          </div>
+                    <div id="botonessn">
+                       <div id="b1s"></div>
+                        <div id="b2s"></div>
+                        <div id="b3s"></div>
+                        <div id="b4s"></div>
+                        <div id="b5s"></div>
+                      </div>
+                    </div>
+              </div>
+              <div id="fondoformsn2"></div>
+              <div id="fondoformsn3"></div>
+              <div id="fondotext"><span class="textimgdes">Netosfera es una compañía joven y como tal, debemos tener en cuenta que en este mundo de alta competencia sólo el mejor sobrevive. Por esta razón hemos dedicado nuestro mayor esfuerzo a instruir a nuestro personal para que sean capaces de implementar las más novedosas tecnologías en el diseño de su página web. Creemos también en que ofreciendo a nuestros clientes una excelente atención personalizada podemos lograr una interacción más productiva entre ambas partes.</span></div>
+              <div id="cualidades">
+                  <div id="cualidada">
+                  <div id="imgcualidad1"></div>
+                  <div id="txtcualidad1"><span class="textoicono">CREATIVIDAD E INNOVACIÓN</span></div>
+                  </div>
+                  <div id="cualidadb">
+                  <div id="imgcualidad2"></div>
+                  <div id="txtcualidad2"><span class="textoicono">SENTIDO DE PERTENENCIA</span></div>
+                  </div>
+                  <div id="cualidadc">
+                  <div id="imgcualidad3"></div>
+                  <div id="txtcualidad3"><span class="textoicono">RESPONSABILIDAD</span></div>
+                  </div>
+                   <div id="cualidadd">
+                  <div id="imgcualidad4"></div>
+                  <div id="txtcualidad4"><span class="textoicono">INTEGRIDAD</span></div>
+                  </div>
+                   <div id="cualidade">
+                  <div id="imgcualidad5"></div>
+                  <div id="txtcualidad5"><span class="textoicono">CALIDAD</span></div>
+                  </div>
+                  <div id="hiloa"></div>
+                  <div id="hilob"></div>
+                  <div id="hiloc"></div>
+                  <div id="hilod"></div>
+                  <div id="hiloe"></div>
+              </div>
+            <div id="tituloformsn">NOSOTROS</div>
+          </div>
+          <div id="barraimgn"></div>
+          <div id="txts">
+              <div id="txt-s1n"><span class="textof1">NOSOTROS<br></span></div>
+              <div id="txt-s2n"><span class="textof1">CLIENTES</span></div>
+          </div>
+    </div>
+</div>
+</div>
+
+ <div class="footern">
+    <div id="footerclaro">
+      <div id="logonetosfera2"></div>
+      <span class="vinferior">
+      <ul>
+      <li> <a href="">Metodologia</a></li>
+      <li> <a href="">Portafolio</a> </li>
+      <li> <a href="">Servicios</a> </li>
+      <li> <a href="">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferior">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferior">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+    </div>
+      <form class="form-footer">
+        <input type value="Nombre" class="cnombre">
+      <input type value="Email / Telefono" class="cemail">
+      <input type value="Asunto" class="casunto">
+      <input type value="Enviar" class="cenviar">
+      </form>
+
+  </div>
+</body>
+</html>
+

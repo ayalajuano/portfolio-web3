@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<meta charset ="UTF-8">
+<title>Metodologia</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+    $(".boton5").mouseout(function () {
+      $("#vm").css('margin-top','-94px');
+      $("#vm").css('opacity','0');
+      $(".boton5 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton4").mouseout(function () {
+      $("#vp").css('margin-top','-87px');
+      $("#vp").css('opacity','0');
+      $(".boton4 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton3").mouseout(function () {
+      $("#vs").css('margin-top','-87px');
+      $("#vs").css('opacity','0');
+      $(".boton3 .vinculosinf").css('color','#36b8f3');
+    });
+    $(".boton2").mouseout(function () {
+      $("#vc").css('margin-top','-87px');
+      $("#vc").css('opacity','0');
+      $(".boton2 .vinculosinf").css('color','#36b8f3');
+    });
+   $(".boton1").mouseout(function () {
+      $("#vn").css('margin-top','-87px');
+      $("#vn").css('opacity','0');
+      $(".boton1 .vinculosinf").css('color','#36b8f3');
+    });
+  });
+function cambioclase(x){
+  if($(x).attr('class') == "boton2"){
+     $("#vc").css('margin-top','-7px');
+     $("#vc").css('opacity','100');
+     $(".boton2 .vinculosinf").css('color','#fff');
+   }
+else{
+  if($(x).attr('class') == "boton5"){
+      $("#vm").css('margin-top','-4px');
+     $("#vm").css('opacity','100');
+     $(".boton5 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton4"){
+     $("#vp").css('margin-top','-4px');
+     $("#vp").css('opacity','100');
+     $(".boton4 .vinculosinf").css('color','#fff');}
+
+   if($(x).attr('class') == "boton3"){
+     $("#vs").css('margin-top','-4px');
+     $("#vs").css('opacity','100');
+     $(".boton3 .vinculosinf").css('color','#fff');}
+   
+   if($(x).attr('class') == "boton1"){
+     $("#vn").css('margin-top','-4px');
+     $("#vn").css('opacity','100');
+     $(".boton1 .vinculosinf").css('color','#fff');}
+
+}}
+function cambionombre(x){
+id = $(x).attr('id').split("-");
+n = id[1];
+
+switch(parseInt(n))
+{
+  case 1:
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 2:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 3:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  case 4:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");   
+  break;
+  case 5:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-5").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+   case 6:
+      $("#secciones-0").fadeOut("slow");
+      $("#secciones-1").fadeOut("slow");
+      $("#secciones-2").fadeOut("slow");  
+      $("#secciones-3").fadeOut("slow");  
+      $("#secciones-4").fadeOut("slow");  
+      $("#secciones-"+ n).fadeIn("slow");  
+  break;
+  default:
+  break;
+}
+}
+  </script>
+
+<div class="fondon">
+   <div id="headern">
+         <div id="vinculos">
+           
+           </div>
+          <div id="sombras">
+            <div id="vh"><a href="home.html" href="{{ path('frontend_contenido_homepage') }}"><div id="logonetosfera"></div></a> 
+          </div>
+          <div class="dum">
+            <div id="vm" class="vm2">
+            </div>
+          </div>
+          <div class="dum"> 
+          <div id="vp" class="vp2"></div>
+        </div>
+         <div class="dum">
+          <div id="vs" class="vs2"></div>
+          </div>
+           <div class="dum">
+          <div id="vc" class="vc2"></div>
+          </div>
+      <div class="dum">
+            <div id="vn" class="vn2">
+            </div>
+          </div>
+                <nav>
+              <ul>     <!-- <li> <a href="metodologia.html">Metodologia</a></li>-->
+                <li><a class ="boton1" href="metodologia.html" href="{{ path('frontend_contenido_metodologia') }}" onmouseover="cambioclase(this);"><span class="vinculossup">METODOLOGIA</span><br><span class="vinculosinf">NUESTROS PASOS</span></br></a></li>
+                <li><a class ="boton2" href="portafolio.html" href="{{ path('frontend_contenido_portafolio') }}" onmouseover="cambioclase(this);"><span class="vinculossup">PORTAFOLIO</span><br><span class="vinculosinf">NUESTRO ORGULLO</span></br></a></li>
+                 <li><a class ="boton3" href="servicios.html" href="{{ path('frontend_contenido_servicios') }}" onmouseover="cambioclase(this);"><span class="vinculossup">SERVICIOS</span><br><span class="vinculosinf">A TU MEDIDA</span></br></a></li>
+                <li><a class ="boton4" href="contacto.html" href="{{ path('frontend_contenido_contacto') }}" onmouseover="cambioclase(this);"><span class="vinculossup">CONTACTENOS</span><br><span class="vinculosinf">DE CUALQUIER MANERA</span></br></a></li>
+        <li><a class ="boton5" href="nosotros.html" href="{{ path('frontend_contenido_nosotros') }}" onmouseover="cambioclase(this);"><span class="vinculossup">NOSOTROS</span><br><span class="vinculosinf">CONOCENOS</span></br></a></li>
+              </ul>
+            </nav>
+        </div>
+</div>
+<div id="wrapper">
+      <div id="barrasep1"></div>
+      <div id="bannermetoinfo">
+        <div id="namemeto">METODOLOGIA</div>
+      </div>
+      <div id="barrasep2"></div>
+      <div id="metodologiam">
+      <div id="iconosm">
+      <div id="meto-1" onmouseover="cambionombre(this);">
+          <div class="p_e"></div>
+      </div>
+      <div id="meto-2" onmouseover="cambionombre(this);">
+          <div class="d_d"></div>
+      </div>
+      <div id="meto-3" onmouseover="cambionombre(this);">
+          <div class="p_1"></div>
+      </div>
+      <div id="meto-4" onmouseover="cambionombre(this);">
+          <div class="l_1"></div>
+      </div>
+      <div id="meto-5" onmouseover="cambionombre(this);">
+          <div class="s_1"></div>
+      </div>
+      </div>
+      <div id="bannermetom">
+        <div id="secciones-0" class="nombremeto">METODOLOGIA</div>
+        <div id="secciones-1" class="nombreplanificacion">PLANIFICACION ESTRATEGICA</div>
+        <div id="secciones-2" class="nombrediseno">DISEÑO Y DESARROLLO</div>
+        <div id="secciones-3" class="nombrepruebas">PRUEBAS</div>
+        <div id="secciones-4" class="nombrelanzamiento">LANZAMIENTO</div>
+        <div id="secciones-5" class="nombresoporte">SOPORTE</div>
+      </div>
+    </div>
+    <div id="contenedormediosupmeto">
+
+        <div id="fondom">
+          <div id="infometodologia">
+            <div id="txtmetodologia" class="infometo">-PROFUNDIZA EN LAS NECESIDADES DEL CLIENTES, DEPENDIENDO DE LA MAGNITUD DEL PROYECTO Y COMPLEJIDAD DEL MISMO, ASÍ EJECUTA LOS PASOS NECESARIOS PARA COMPLETAR SU PÁGINA.<br/><br/>- Realiza los encargos conjuntamente con su personal para que permanezca informado de todo el proceso.<br/><br/>- Proporciona un acceso a una página web donde pueda verificar el desarrollo del proyecto.<br/><br/>- Emplea una metodología sistemática que permite trabajar de una manera organizada.<br/><br/>- Elabora su sitio web con un equipo de trabajo altamente calificado.</div>
+            <div id="rayazul1"></div>
+            <div id="rayazul2"></div>
+            <div id="rayazul3"></div>
+            <div id="rayazul4"></div>
+            <div id="rayazul5"></div>
+          </div>
+        </div>
+      </div>
+</div>
+
+  <div class="footern">
+    <div id="footerclaro">
+      <div id="logonetosfera2"></div>
+      <span class="vinferior">
+      <ul>
+      <li> <a href="">Metodologia</a></li>
+      <li> <a href="">Portafolio</a> </li>
+      <li> <a href="">Servicios</a> </li>
+      <li> <a href="">Contactenos</a> </li>
+      <li> <a href="">Mapa del Sitio</a> </li>
+      <li> <a href="">Redes Sociales</a> </li> 
+      </ul>
+      </span>
+      <span class="v2inferior">
+      <ul>
+      <li> <a href="">Aliados</a> </li>
+      <li> <a href="">Ubicanos</a> </li>
+      </ul>
+      </span>
+      <span class="v3inferior">Todos los Derechos Reservados 2013
+      </span>
+    </div>
+      <form class="form-footer">
+        <input type value="Nombre" class="cnombre">
+      <input type value="Email / Telefono" class="cemail">
+      <input type value="Asunto" class="casunto">
+      <input type value="Enviar" class="cenviar">
+      </form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import "public-all.css" screen;
+@import "public-mw-1200.css" (max-width:1200px);
+@import "public-mw-1033.css" screen and (max-width:1033px);
+@import "public-mw-992to1485.css" screen and (min-width:992px) and (max-width:1485px);
+@import "public-mw-993to1200.css" screen and (min-width:993px) and (max-width:1200px);
+@import "public-mw-992.css" screen and (max-width:992px);
+@import "public-mw-800.css" screen and (max-width:800px);
+@import "public-mw-767.css" screen and (max-width:767px);
+@import "public-mw-660.css" screen and (max-width:660px);
+@import "public-mw-551to765.css" screen and (min-width:551px) and (max-width:765px);
+@import "public-mw-550.css" screen and (max-width:550px);
+@import "public-mw-536.css" screen and (max-width:536px);
+@import "public-mw-480.css" screen and (max-width:480px);
+@import "public-mw-461to602.css" screen and (min-width:461px) and (max-width:602px);
+@import "public-mw-461.css" screen and (max-width:461px);
+@import "public-mw-412.css" screen and (max-width:412px);
+@media screen and (max-width: 525px) {
+  .input-setpass{
+    margin-right:63px;
+    font-size: 0.9em;
+   }
+  .input-confirmspass{
+    margin-right:106px;  
+    
+}
+}
+
+@media screen and (max-width: 400px) {
+  .input-setpass{
+    margin-right:10px;
+    font-size: 0.8em;
+       
+}
+  .input-confirmspass{
+    margin-right:0px;  
+    
+}
+}
